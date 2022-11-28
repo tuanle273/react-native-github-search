@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Navbar extends Component {
-  render() {
+const Navbar = () => { 
     return (
       <div>
         <div className="navbar bg-primary">React Native Tuanle273</div>
       </div>
     );
-  }
-}
+};
 
 export default Navbar;

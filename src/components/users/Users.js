@@ -1,18 +1,18 @@
 
-import { Component } from "react";
 import UserItem from "./UserItem";
-export class Users extends Component {
-    render() {
-        return (
-            <div style={userStyle}>
+const Users = (props) => {
+    const { usersData } = props;
+ 
+    return (
+        <div style={userStyle}>
             {
-            this.props.usersData.map((user) => (
-                <UserItem key={user.id} user={user} />
-            ))}
-            </div>
-        );
-}
-}
+                usersData.map((user) => (
+                    <UserItem key={user.id} user={user} />
+                ))}
+        </div>
+    );
+
+};
 const userStyle = {
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",
