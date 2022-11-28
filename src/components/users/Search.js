@@ -41,6 +41,7 @@ export class Search extends Component {
             onClick={this.handleSubmit}
             className="btn btn-dark btn-block"
             type="submit"
+            
                 />
                 <button
                     className="btn btn-primary btn-block"
